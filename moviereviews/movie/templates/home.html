@@ -17,8 +17,26 @@
         </form>
     </div>
     {% if search_bar %}
-        <h2> search for {{search_bar}}</h2>
+        <h4> search for {{search_bar}}</h4>
     {%endif%}
+ </br>
+ </br>
+    {% if movie %}
+    {% for mv in movie %}
+    <h2>{{mv.title}}</h2>
+    <img src="{{mv.image.url}}">
+    <h4>{{mv.description}}</h4>
+    {% if mv.url %}
+    <a href="{{mv.url}}">Movie Link</a>
+    {% endif%}
+ </br>
+ </br>
+    {% endfor%}
+        {%endif%}
+ </br>
+ </br>
+  </br>
+ </br>
     <div>
         <form action="signup" method="GET" enctype="multipart/form-data">
             <div class="mb-3">
