@@ -24,7 +24,7 @@ urlpatterns = [
     path('', mv.home),
     path('about/', mv.about),
     path('signup/', mv.signup, name='signup'),
-    path('news/', include('news.urls'), name='news'),
+    path('news/', include('news.urls'   ), name='news'),
 ]
 
 
