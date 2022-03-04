@@ -13,7 +13,10 @@ def home(request):
 
 
 def about(request):
-    return HttpResponse("this is your about us page.")
+    name = 'Neha'
+    contact_number = '8054946672'
+    email = 'nawasthi34@gmail.com'
+    return render(request, 'about_us.html', {'name': name, 'contact': contact_number,'email':email})
 
 
 def signup(request):
