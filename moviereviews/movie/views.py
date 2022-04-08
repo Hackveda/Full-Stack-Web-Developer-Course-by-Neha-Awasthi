@@ -16,7 +16,8 @@ def home(request):
 
 
 def about(request):
-    return HttpResponse('<h1>Welcome to About Page</h1>')
+    return HttpResponse('<h1>Welcome to About Us Page. please contact us on given details.'
+                        'email:nawasthi34@gmail.com and contact number: 8054946672</h1>')
 
 
 def signup(request):
