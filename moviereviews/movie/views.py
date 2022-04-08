@@ -72,3 +72,8 @@ def deletereview(request, review_id):
     review = get_object_or_404(Review, pk=review_id, user=request.user)
     review.delete()
     return redirect('detail', review.movie.id)
+
+
+
+def add_new_branch(request):
+    pass
